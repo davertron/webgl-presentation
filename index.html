@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <title>Presentation</title>
+        <link rel="stylesheet" href="../reveal.js/css/reset.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="../reveal.js/css/main.css" type="text/css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div id="reveal">
+            <div class="slides">
+                <section>
+                    <h1 id="">WebGL</h1>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style="font-size: 80%">Dave Davis</p>
+                </section>
+                <section>
+                    <h1 id="">Fun Facts</h1>
+                    <ul>
+                        <li class="fragment">Based on OpenGL ES 2.0</li>
+                        <li class="fragment">Context of HTML Canvas</li>
+                        <li class="fragment">Let's you draw sweet stuff</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Supported Browsers</h1>
+                    <ul>
+                        <li>Firefox 4+</li>
+                        <li>Chrome 9+</li>
+                        <li>Safari 5.1 OS X Lion (disabled by default)</li>
+                        <li>Opera 12 pre-release</li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h1>What about IE?</h1>
+                    </section>
+                    <section>
+                        <h1>No announced plans to support it</h1>
+                        <img src="http://www.whitec0de.com/wp-content/uploads/2011/11/OMG.jpg" />
+                    </section>
+                </section>
+                <section>
+                    <h1>What is it really?</h1>
+                    <p class="fragment">OpenGL + JavaScript</p>
+                </section>
+                <section>
+                    <h1>What is OpenGL?</h1>
+                    <blockquote cite="http://en.wikipedia.org/wiki/Opengl">
+                        A standard specification defining a cross-language, cross-platform API for writing applications that produce 2D and 3D computer graphics.
+                    </blockquote>
+                </section>
+                <section>
+                    <h1>OpenGL Nouns</h1>
+                    <ul>
+                        <li class="fragment">Vertices</li>
+                        <li class="fragment">Primitives</li>
+                        <li class="fragment">Matrices</li>
+                        <li class="fragment">Textures</li>
+                        <li class="fragment">Buffers</li>
+                        <li class="fragment">Shaders</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Vertices &amp; Primitives</h1>
+                    <img src="http://3.bp.blogspot.com/_3LRNVfBfliQ/Sdrassh4daI/AAAAAAAAAs8/PJHO65VEvyw/s400/opengles_primitives.png" />
+                </section>
+                <section>
+                    <h1>Matrices</h1>
+                    <p>Used to represent transformations (translation, rotation, scaling)</p>
+                    <img src="http://www.songho.ca/opengl/files/gl_anglestoaxes01.png" />
+                </section>
+                <section>
+                    <h1>Do I have to Do Math???</h1>
+                    <p>Not really. There's just two matrices you care about: ModelView and Projection, and you use libraries to help you manipulate the matrices.</p>
+                </section>
+                <section>
+                    <h1>ModelView Matrix</h1>
+                    <p>Basically the matrix that represents the position/scale/rotation of your "model" (collection of vertices)</p>
+                </section>
+                <section>
+                    <h1>Projection Matrix</h1>
+                    <p>Defines a clipping volume (clipping just means "don't draw vertices outside of this volume")</p>
+                    <img src="http://www.songho.ca/opengl/files/gl_transform09.png" />
+                </section>
+                <section>
+                    <h1>Textures</h1>
+                    <p>Just an image that you map to a set of vertices</p>
+                    <img src="crate.png" />
+                </section>
+                <section>
+                    <h1 id="">The end.</h1>
+                </section>
+            </div>
+            <aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+            <div class="progress"><span></span></div>
+        </div>
+        <script type="text/javascript" src="../reveal.js/js/reveal.js"></script>
+        <script type="text/javascript" src="../reveal.js/lib/highlight.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            // Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+            
+            Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: false,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: false,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+            
+        </script>
+    </body>
+</html>
