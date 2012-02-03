@@ -5,16 +5,35 @@
         <title>Presentation</title>
         <link rel="stylesheet" href="../reveal.js/css/reset.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="../reveal.js/css/main.css" type="text/css" media="screen" charset="utf-8">
+        <script type="text/javascript" src="jquery.1.7.1.min.js"></script>
+        <script type="text/javascript" src="Three.js"></script>
+        <script type="text/javascript" src="threejs_title.js"></script>
+        <style type="text/css" media="screen">
+            body {
+                font-family: georgia, helvetica, arial, serif;
+            }
+        </style>
     </head>
     <body>
         <div id="reveal">
             <div class="slides">
+                <section id="title">
+                    <section>
+                        <h1>WebGL</h1>
+                        <p style="font-size: 80%">Dave Davis</p>
+                    </section>
+                    <section>
+                        <h1>Reveal.js</h1>
+                        <a href="http://lab.hakim.se/reveal-js/#/">http://lab.hakim.se/reveal-js/#/</a>
+                    </section>
+                </section>
                 <section>
-                    <h1 id="">WebGL</h1>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <p style="font-size: 80%">Dave Davis</p>
+                    <section>
+                        <h1>Firstly, and Most Importantly...</h1>
+                    </section>
+                    <section>
+                        <img src="ihavenoidea_small.png" />
+                    </section>
                 </section>
                 <section>
                     <h1 id="">Fun Facts</h1>
@@ -39,7 +58,7 @@
                     </section>
                     <section>
                         <h1>No announced plans to support it</h1>
-                        <img src="http://www.whitec0de.com/wp-content/uploads/2011/11/OMG.jpg" />
+                        <img src="OMG.png" />
                     </section>
                 </section>
                 <section>
@@ -59,6 +78,7 @@
                         <li class="fragment">Primitives</li>
                         <li class="fragment">Matrices</li>
                         <li class="fragment">Textures</li>
+                        <li class="fragment">Blending (Alpha)</li>
                         <li class="fragment">Buffers</li>
                         <li class="fragment">Shaders</li>
                     </ul>
@@ -89,6 +109,60 @@
                     <h1>Textures</h1>
                     <p>Just an image that you map to a set of vertices</p>
                     <img src="crate.png" />
+                </section>
+                <section>
+                    <h1>Buffers</h1>
+                    <p>There are many different kinds of buffers, but for the most part they're just chunks of memory. The ones you care about are:</p>
+                    <ul>
+                        <li>Array Buffers</li>
+                        <li>Frame Buffers</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Shaders</h1>
+                    <ul>
+                        <li>Not just for shading</li>
+                        <li>Programs that run per-vertex or per-fragment (think "pixel") on the GPU</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>What it doesn't have</h1>
+                    <ul>
+                        <li>Camera System</li>
+                        <li>Audio (drawing duh!)</li>
+                        <li>Text/Fonts</li>
+                        <li>Networking</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Show Me Some Code!</h1>
+                    <img src="code.png" />
+                </section>
+                <section>
+                    <h1>Resources</h1>
+                    <ul>
+                        <li>
+                            <a href="http://www.khronos.org/webgl/wiki/Main_Page">Khronos WebGL Wiki</a>
+                        </li>
+                        <li>
+                            <a href="http://learningwebgl.com/blog/?page_id=1217">Learning WebGL</a>
+                        </li>
+                        <li>
+                            <a href="http://www.iquilezles.org/apps/shadertoy/">Shader Toy</a>
+                        </li>
+                        <li>
+                            <a href="http://www.chromeexperiments.com/webgl">Chrome Experiments</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mrdoob/three.js/">Three.js</a> / <a href="http://www.glge.org/">GLGE</a> / <a href="http://www.ambiera.com/copperlicht/">Copperlicht</a> / <a href="http://www.c3dl.org/">C3DL</a> / ...and many more!
+                        </li>
+                        <li>
+                            <a href="http://alteredqualia.com/">AlteredQualia</a>
+                        </li>
+                        <li>
+                            <a href="http://box2d-js.sourceforge.net/">Box2DJS</a>
+                        </li>
+                    </ul>
                 </section>
                 <section>
                     <h1 id="">The end.</h1>
