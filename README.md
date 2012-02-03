@@ -3,15 +3,15 @@
 Given at Dealer.com on 2/3/2012
 
 ## Assets
-The assets are basically my presentation and the pictures and two files with some WebGL examples.
+The assets are basically my presentation (and the pictures to go with it) and a couple of WebGL examples.
 
 * index.html - Presentation (uses [Reveal.js](http://lab.hakim.se/reveal-js/#/), so you need a browser that supports it)
-* lesson1.html - Example from [Learning WebGL](http://learningwebgl.com/blog/?page_id=1217)
-* Three.js - Used in the presentation (on the title screen) and for the Three.js example
-* jQuery
-* glMatrix - Used for matrix operations in lesson1
+* lesson1.html - Example from [Learning WebGL](http://learningwebgl.com/blog/?page_id=1217) that shows using raw WebGL
 * threejs_title.coffee/js - Used for the spinning cube in the presentation on the title slide
-* threejs_example.coffee/js - Example of Three.js spinning cube (wireframe)
+* threejs_example.coffee/js - Example of Three.js spinning cube (standalone)
+* Three.js - Used in the presentation (on the title screen) and for the Three.js example
+* jQuery - For various dom manipulations
+* glMatrix - Used for matrix operations in lesson1
 
 ## Resources
 * [Khronos WebGL Wiki](http://www.khronos.org/webgl/wiki/Main_Page) - Useful information about WebGL, including some demos
