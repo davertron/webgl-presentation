@@ -5,7 +5,8 @@ Given at Dealer.com on 2/3/2012
 ## Assets
 The assets are basically my presentation (and the pictures to go with it) and a couple of WebGL examples.
 
-* index.html - Presentation (uses [Reveal.js](http://lab.hakim.se/reveal-js/#/), so you need a browser that supports it)
+* presentation.html - Presentation (uses [Reveal.js](http://lab.hakim.se/reveal-js/#/), so you need a browser that supports it)
+* index.html - Index page
 * lesson1.html - Example from [Learning WebGL](http://learningwebgl.com/blog/?page_id=1217) that shows using raw WebGL
 * threejs_title.coffee/js - Used for the spinning cube in the presentation on the title slide
 * threejs_example.coffee/js - Example of Three.js spinning cube (standalone)
