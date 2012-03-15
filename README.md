@@ -2,6 +2,8 @@
 
 Given at Dealer.com on 2/3/2012
 
+Should be live at [http://davertron.github.com/webgl-presentation/](http://davertron.github.com/webgl-presentation/)
+
 ## Assets
 The assets are basically my presentation (and the pictures to go with it) and a couple of WebGL examples.
 
